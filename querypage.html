@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Airports-Query</title>
+<link rel="stylesheet" type="text/css" href ="query_style.css">
+<script type="text/javascript">
+	function active(){
+		var searchBar = document.getElementById('search');
+		if(searchBar.value == 'Search country...'){
+			searchBar.value = ''
+			searchBar.placeholder = 'Search country...'
+		}
+	
+		}
+</script>
+
+</head>
+<body>
+	<ul class ="nav2">
+		
+			<div class="logo2">
+				<a href="#">AIRPORTS - QUERY</a>
+			</div>
+				<li><a href="NewFile.html">Home</a></li>
+				<li><a href="reportpage.html">Report</a></li>
+			
+				
+	</ul>
+	<div class="banner">
+			<img class="im-banner" src="1im.jpg" >
+		</div>
+	<p>Please, type in the country name or country code below to find all available airports</p>
+	<form action="search.php" method="post">
+		<input type="text" id="search" placeholder="" value ="Search country..." max_length="30" autocomplete="off" onMouseDown ="active();" onBlur="" /><input type="dumbit" id="button" max_length="5" value="Go"/>	
+	</form>
+	
+	<h4>Search results: </h4>
+	<p>Result 1</p>
+	<p>Result 2</p>
+	<p>Result 3</p>
+	<p>Result 4</p>
+	<p>Result 5</p>
+</body>
+</html>
